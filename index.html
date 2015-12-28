@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div ng-app="searchApp">
+  <div ng-controller="searchController">
+
+    <div class="well">
+      <input type="text" class="form-control" ng-model="search" ng-keyup="pesquisar(search)" placeholder="Digite: lorem, welcome, quick, countries..." autofocus autocomplete="off">
+    </div>
+
+    <ul class="post-list" ng-show="posts.length > 0">
+      <li ng-repeat="post in posts | filter:search">
+        <span class="post-meta"><strong>Category:</strong> <em>{( post.category )}</em></span>
+        <h2>
+          <a class="post-link" href="{( post.url )}">{( post.title )}</a>
+        </h2>
+      </li>
+    </ul>
+
+    <hr>
+
+  </div>
+
+</div>
