@@ -1,6 +1,6 @@
 # Busca no jekyll com Angular
 
-Demo ~> https://nandomoreirame.github.io/busca-no-jekyll-com-angularjs
+Demo ~> http://nando-experiments.github.io/busca-no-jekyll-com-angularjs/
 
 
 ## Me pague um café?
